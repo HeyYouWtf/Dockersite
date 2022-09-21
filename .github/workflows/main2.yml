@@ -1,0 +1,23 @@
+
+name: CI
+
+on:
+  push:
+    branches:
+         -main
+
+
+jobs:
+  my_testing:
+    runs-on: ubuntu-latest
+    steps:
+      
+      - name: Print Helo masege
+        run: echo "Hello World from Testing job" 
+     
+   
+  my_deploy:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Print Hello masege
+          run: echo "Hello World from Deploy job"
